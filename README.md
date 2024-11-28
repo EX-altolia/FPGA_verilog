@@ -35,7 +35,8 @@ Each GPIO is independently and dynamically programmed as input, output, or inter
 
 5.MIO与EMIO都是：1.配置硬件;2.配置使能;3.操作。
 
-6.官方exam，vitis打开版级支持包可以找到例程![alt text](image-2.png)
+6.官方exam，vitis打开版级支持包可以找到例程![image-2](https://github.com/user-attachments/assets/3b165f34-b396-48c5-a710-b9bf5763807d)
+
 
 
 
@@ -78,7 +79,8 @@ Each GPIO is independently and dynamically programmed as input, output, or inter
     key1_value = XGpioPs_ReadPin(&Gpio, KEY1);//读出数值
 ````    
 若为AXI总线控制下的GPIO，则在手册pg144-axi-gpio中有配置顺序：
-![alt text](pg144_page16.png)
+![pg144_page16](https://github.com/user-attachments/assets/c6f8cb86-9dfa-4211-a9e0-f4aa08811603)
+
 
 
 
@@ -710,9 +712,11 @@ SD卡可以直接通过SDIO或者SPI模式进行操作，但是读写的二进�
 在IP核封装中，最常见的就是封装为AXI接口的ip，泛用性更好 
 
 根据文档，到达IP核编辑界面：
-![alt text](uip_edit.png)
+![uip_edit](https://github.com/user-attachments/assets/be6bb7cb-79ef-4683-a86b-df0aae383120)
+
 在编辑界面中文件结构如下：
-![alt text](ip_edit_build.png)
+![ip_edit_build](https://github.com/user-attachments/assets/cbb6c6a4-77e0-4397-8fd9-2bd117994b56)
+
 
 在AXI_IP核编辑界面中，一般可以简化为如下三个层级，这里以本次界面中的结构示意：
 
@@ -725,8 +729,10 @@ SD卡可以直接通过SDIO或者SPI模式进行操作，但是读写的二进�
     2.在breath_led_ip_v1_0中添加在breath_led_ip_v1_0_S00_AXI中新加入的端口与参数定义。
 
 vivado预留的用户端口与逻辑的位置一般在参数与端口定义的开头，或者全部代码的末尾。
-![预留的用户端口与逻辑的位置](image.png)
-![预留的用户端口与逻辑的位置](image-1.png)
+![image](https://github.com/user-attachments/assets/3409fe65-2023-42ab-91dd-fe7a2cc99335)
+
+![image-1](https://github.com/user-attachments/assets/e86c9468-5697-466d-872d-a07365265b94)
+
 
 
 ##### xadc
